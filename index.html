@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <div class="app">
+      <p class="problem"></p>
+      <form class="our-form">
+          <input class="inputBar" placeholder="enter your answer here" autocomplete="off" type="text"/>
+         <button class="submit-button">Submit</button> <!--by default by clicking the submit button page reload normally used to send url -->
+      <!-- we dont want this default behaviour as we are not sending data to any server or interacting in any url-->
+      </form>
+      <p class="status-description">You need <span id="pointsNeeded">10</span> more points to clear are allowed to make <span id="mistakesAllowed">2</span> more mistakes the quiz</p>
+  <div class="progress">
+
+    <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="progress-inner"></div>
+  </div>
+
+  </div>
+  <div class="overlay">
+    <div class="overlay-inner">
+      <p class="pop-message"></p>
+      <button class="reset-button">Start Over</button>
+    </div>
+
+  </div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
